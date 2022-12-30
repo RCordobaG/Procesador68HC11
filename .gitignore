@@ -1,4 +1,5 @@
 db/
 incremental_db/
+simulation/
 output_files/
 m68hc11.qws
