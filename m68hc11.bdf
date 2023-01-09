@@ -276,6 +276,38 @@ refer to the applicable agreement for further details.
 		(line (pt 78 12)(pt 82 8))
 	)
 )
+(pin
+	(output)
+	(rect 2472 784 2648 800)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "C" (rect 90 0 98 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 2408 640 2584 656)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "Cin" (rect 90 0 106 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
 (symbol
 	(rect 2088 264 2264 472)
 	(text "ctrl_interrupciones" (rect 5 0 94 12)(font "Arial" ))
@@ -2087,50 +2119,6 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 3416 304 3528 496)
-	(text "ram" (rect 0 169 12 187)(font "Arial" )(vertical))
-	(text "inst6" (rect 96 159 113 181)(font "Intel Clear" )(vertical))
-	(port
-		(pt 32 192)
-		(input)
-		(text "address[15..0]" (rect 0 0 70 12)(font "Arial" ))
-		(text "address[15..0]" (rect 27 104 39 174)(font "Arial" )(vertical))
-		(line (pt 32 192)(pt 32 176)(line_width 3))
-	)
-	(port
-		(pt 48 192)
-		(input)
-		(text "Wn" (rect 0 0 16 12)(font "Arial" ))
-		(text "Wn" (rect 43 154 55 170)(font "Arial" )(vertical))
-		(line (pt 48 192)(pt 48 176))
-	)
-	(port
-		(pt 64 192)
-		(input)
-		(text "CSn" (rect 0 0 21 12)(font "Arial" ))
-		(text "CSn" (rect 59 149 71 170)(font "Arial" )(vertical))
-		(line (pt 64 192)(pt 64 176))
-	)
-	(port
-		(pt 80 192)
-		(input)
-		(text "clk" (rect 0 0 14 12)(font "Arial" ))
-		(text "clk" (rect 75 157 87 171)(font "Arial" )(vertical))
-		(line (pt 80 192)(pt 80 176))
-	)
-	(port
-		(pt 32 0)
-		(bidir)
-		(text "data[7..0]" (rect 0 0 47 12)(font "Arial" ))
-		(text "data[7..0]" (rect 27 13 39 60)(font "Arial" )(vertical))
-		(line (pt 32 0)(pt 32 16)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 96 176))
-	)
-	(rotate90)
-)
-(symbol
 	(rect 880 152 1120 1208)
 	(text "secuenciador" (rect 5 0 81 19)(font "Intel Clear" (font_size 8)))
 	(text "inst14" (rect 8 1035 36 1052)(font "Intel Clear" ))
@@ -2714,6 +2702,50 @@ refer to the applicable agreement for further details.
 		(rectangle (rect 16 16 168 96))
 	)
 )
+(symbol
+	(rect 3416 304 3528 496)
+	(text "ram" (rect 0 169 12 187)(font "Arial" )(vertical))
+	(text "inst6" (rect 96 161 108 184)(font "Arial" )(vertical))
+	(port
+		(pt 32 192)
+		(input)
+		(text "address[15..0]" (rect 0 0 70 12)(font "Arial" ))
+		(text "address[15..0]" (rect 27 101 39 171)(font "Arial" )(vertical))
+		(line (pt 32 192)(pt 32 176)(line_width 3))
+	)
+	(port
+		(pt 48 192)
+		(input)
+		(text "Wn" (rect 0 0 16 12)(font "Arial" ))
+		(text "Wn" (rect 43 155 55 171)(font "Arial" )(vertical))
+		(line (pt 48 192)(pt 48 176))
+	)
+	(port
+		(pt 64 192)
+		(input)
+		(text "CSn" (rect 0 0 21 12)(font "Arial" ))
+		(text "CSn" (rect 59 150 71 171)(font "Arial" )(vertical))
+		(line (pt 64 192)(pt 64 176))
+	)
+	(port
+		(pt 80 192)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 75 157 87 171)(font "Arial" )(vertical))
+		(line (pt 80 192)(pt 80 176))
+	)
+	(port
+		(pt 32 0)
+		(bidir)
+		(text "data[7..0]" (rect 0 0 47 12)(font "Arial" ))
+		(text "data[7..0]" (rect 27 10 39 57)(font "Arial" )(vertical))
+		(line (pt 32 0)(pt 32 16)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 96 176))
+	)
+	(rotate90)
+)
 (connector
 	(pt 2728 136)
 	(pt 2312 136)
@@ -3011,10 +3043,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 2464 888)
 	(pt 2464 728)
-)
-(connector
-	(pt 2376 616)
-	(pt 2592 616)
 )
 (connector
 	(pt 2440 808)
@@ -4491,10 +4519,6 @@ refer to the applicable agreement for further details.
 	(pt 2896 1392)
 )
 (connector
-	(pt 2592 616)
-	(pt 2592 472)
-)
-(connector
 	(pt 2968 -152)
 	(pt 2968 376)
 )
@@ -4872,14 +4896,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 624 768)
 	(pt 528 768)
-)
-(connector
-	(pt 2472 720)
-	(pt 2472 824)
-)
-(connector
-	(pt 2472 824)
-	(pt 2472 1472)
 )
 (connector
 	(pt 624 464)
@@ -5976,6 +5992,38 @@ refer to the applicable agreement for further details.
 	(pt 3400 1568)
 	(bus)
 )
+(connector
+	(pt 2472 720)
+	(pt 2472 792)
+)
+(connector
+	(pt 2472 792)
+	(pt 2472 824)
+)
+(connector
+	(pt 2472 824)
+	(pt 2472 1472)
+)
+(connector
+	(pt 2408 648)
+	(pt 2400 648)
+)
+(connector
+	(pt 2592 472)
+	(pt 2592 616)
+)
+(connector
+	(pt 2400 616)
+	(pt 2400 648)
+)
+(connector
+	(pt 2376 616)
+	(pt 2400 616)
+)
+(connector
+	(pt 2400 616)
+	(pt 2592 616)
+)
 (junction (pt 2528 -120))
 (junction (pt 2544 -136))
 (junction (pt 2632 -136))
@@ -6041,3 +6089,5 @@ refer to the applicable agreement for further details.
 (junction (pt 3104 576))
 (junction (pt 3320 1552))
 (junction (pt 3336 1568))
+(junction (pt 2472 792))
+(junction (pt 2400 616))
