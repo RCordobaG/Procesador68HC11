@@ -173,12 +173,14 @@ architecture Behavioral of upa is
 						Q <= Q;
 						
 				when B"100" => -- Corrimiento derecha
-						Yupa_interno <= Yupa_interno(0) & Yupa_interno(7 downto 1);
+						--Yupa_interno <= Yupa_interno(0) & Yupa_interno(7 downto 1);
+						Yupa_interno <= Cin & Yupa_interno(7 downto 1);
 						Q <= Q;
 						
 				when B"101" =>
 						Yupa_interno <= Yupa_interno;
-						Q <= Q(0) & Q(7 downto 1);
+						--Q <= Q(0) & Q(7 downto 1); 
+						Q <= Yupa_interno(0) & Q(7 downto 1); 
 						
 				when B"110" => -- Corrimiento izquierda
 						Yupa_interno <= Yupa_interno(6 downto 0) & Yupa_interno(7);
